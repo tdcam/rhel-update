@@ -1,0 +1,12 @@
+---
+- name: Update RHEL
+  become: true
+  hosts: all
+  tasks:
+  - name: use DNF to update all packages
+    ansible.builtin.dnf:
+      name: "*"
+      state: latest
+  - name: reboot the system
+    ansible.builtin.reboot:
+      reboot_timeout: 300
