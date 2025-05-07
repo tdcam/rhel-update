@@ -1,7 +1,7 @@
 ---
 - name: create repo file for local repository
   become: true
-  hosts: all
+  hosts: net
   tasks:
     - name: create /etc/yum.repos.d/local.repo
       ansible.builtin.copy:
