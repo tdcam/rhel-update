@@ -1,0 +1,11 @@
+[BaseOS]
+name=BaseOS
+baseurl=http://192.168.122.1/rhel9.5/BaseOS
+gpgkey=http://192.168.122.1/rhel9.5/RPM-GPG-KEY-redhat-release
+enabled=1
+
+[AppStream]
+name=BaseOS
+baseurl=http://192.168.122.1/rhel9.5/AppStream
+gpgkey=http://192.168.122.1/rhel9.5/RPM-GPG-KEY-redhat-release
+enabled=1

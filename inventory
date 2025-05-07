@@ -1,0 +1,9 @@
+[all]
+vm-net.redhat.local
+vm-os.redhat.local
+
+[net]
+vm-net.redhat.local
+
+[os]
+vm-os.redhat.local

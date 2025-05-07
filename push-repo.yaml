@@ -1,0 +1,12 @@
+---
+- name: create repo file for local repository
+  become: true
+  hosts: all
+  tasks:
+    - name: create /etc/yum.repos.d/local.repo
+      ansible.builtin.copy:
+        src: local.repo
+        dest: /etc/yum.repos.d/local.repo
+        owner: root
+        group: root
+        mode: 0644
